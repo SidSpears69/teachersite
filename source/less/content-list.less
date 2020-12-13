@@ -1,0 +1,26 @@
+.content-list {
+  padding: 30px;
+
+}
+.content-list__item {
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #E1E1E1;
+}
+.content-list__link {
+  display: flex;
+  align-items: center;
+  &:hover .content-list__svg,
+  &:focus .content-list__svg {
+    fill: currentColor;
+  }
+}
+.content-list__svg {
+  &--file {
+    margin-right: 30px;
+  }
+  &--download {
+    margin-left: auto;
+  }
+}

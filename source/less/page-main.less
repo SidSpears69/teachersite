@@ -1,0 +1,41 @@
+.page-main {
+  margin-top: 55px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  &--home-page {
+    flex-direction: row;
+    margin-top: 80px;
+    margin-bottom: 60px;
+  }
+}
+.page-main__text {
+  width: 60%;
+}
+.page-main__photo {
+  width: 40%;
+  object-fit: cover;
+}
+.page-main__title {
+  font-family: "Bitter", Georgia, serif;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.page-main__content {
+  background: #ffffff;
+  position: relative;
+  height: 100%;
+  flex-grow: 1;
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: -30px;
+    height: 30px;
+    width: 100%;
+    background: #ffffff;
+  }
+}

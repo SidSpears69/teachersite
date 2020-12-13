@@ -1,0 +1,17 @@
+.menu-footer {
+  display: flex;
+  justify-content: center;
+}
+.menu-footer__link {
+  color: inherit;
+  margin-right: 20px;
+}
+.menu-footer__item {
+  margin-right: 20px;
+  &:last-child {
+    margin-right: 0;
+    & .menu-footer__link {
+      margin-right: 0;
+    }
+  }
+}
